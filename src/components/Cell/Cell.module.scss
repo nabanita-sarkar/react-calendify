@@ -1,0 +1,23 @@
+@use '../../styles/variables.scss' as var;
+
+
+.cell {
+	border-left: var.$border;
+	border-bottom: var.$border;
+	background: var.$primary-bg;
+	color: var.$primary-color;
+
+	&:nth-child(-n+7) {
+		border-top: var.$border;
+	}
+
+	&:nth-child(7n) {
+		border-right: var.$border;
+	}
+
+	&-disabled {
+		@extend .cell;
+		background: var.$disabled-bg;
+		color: var.$disabled-color;
+	}
+}
