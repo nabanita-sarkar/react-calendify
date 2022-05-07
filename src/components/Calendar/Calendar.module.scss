@@ -1,9 +1,15 @@
 @use '../../styles/variables.scss' as var;
 
 
-.calendar {
+.monthly-calendar {
 	display: grid;
 	grid-template-columns: repeat(7, minmax(0px, 1fr));
 	grid-template-rows: repeat(6, minmax(0px, 1fr));
 	height: calc(100vh - var.$header-height);
+}
+
+.weekly-calendar {
+	display: grid;
+	grid-template-columns: 60px repeat(7, minmax(0px, 1fr));
+	grid-template-rows: repeat(24, minmax(0px, 1fr));
 }
