@@ -1,9 +1,19 @@
 {
-  "name": "react-events-calendar",
+  "name": "@nabanita-sarkar/react-events-calendar",
   "version": "0.1.0",
   "description": "React calendar to show events",
   "license": "MIT",
-  "repository": "https://github.com/nabanita-sarkar/react-events-calendar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nabanita-sarkar/react-events-calendar"
+  },
+  "author": {
+    "name": "Nabanita Sarkar"
+  },
+  "publishConfig": {
+    "name": "@nabanita-sarkar/react-events-calendar",
+    "registry": "https://npm.pkg.github.com/nabanita-sarkar"
+  },
   "main": "src/main.tsx",
   "keywords": [
     "react",
