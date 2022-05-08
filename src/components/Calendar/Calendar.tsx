@@ -10,15 +10,13 @@ import isBetween from "dayjs/plugin/isBetween";
 
 dayjs.extend(isBetween);
 
-const events = [
-  {
-    title: "Test Event",
-    start: "2022-05-07 05:50:00",
-    end: "2022-05-18 06:40:00",
-  },
-];
-
-function Calendar({ type = "weekly" }: { type: CalendarType }) {
+function Calendar({
+  type = "weekly",
+  events,
+}: {
+  type: CalendarType;
+  events: { start: string; end: string; [key: string]: any }[];
+}) {
   const [currentDate, setCurrentDate] = useState(dayjs());
 
   return (

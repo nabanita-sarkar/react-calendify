@@ -1,6 +1,16 @@
 {
-  "name": "vite-react-ts",
-  "version": "0.0.0",
+  "name": "react-events-calendar",
+  "version": "0.1.0",
+  "description": "React calendar to show events",
+  "license": "MIT",
+  "repository": "https://github.com/nabanita-sarkar/react-events-calendar",
+  "main": "src/main.tsx",
+  "keywords": [
+    "react",
+    "calendar",
+    "events",
+    "schedule"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
