@@ -4,7 +4,7 @@ import "./styles/normalize.scss";
 function App() {
   return (
     <section>
-      <Calendar />
+      <Calendar type="weekly" />
     </section>
   );
 }

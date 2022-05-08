@@ -1,5 +1,8 @@
 @use '../../styles/variables.scss' as var;
 
+.wrapper {
+	position: relative;
+}
 
 .monthly-calendar {
 	display: grid;

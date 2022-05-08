@@ -12,7 +12,6 @@ function Cell({
   dateTime: Dayjs;
   currentDate: Dayjs;
 }) {
-  const is24 = "HH:mm";
   return (
     <div
       className={
