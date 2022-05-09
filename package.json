@@ -24,6 +24,11 @@
     },
     "./dist/style.css": "dist/style.css"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "keywords": [
     "react",
     "calendar",
