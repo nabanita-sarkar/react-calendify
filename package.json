@@ -16,7 +16,7 @@
   },
   "main": "dist/react-calendify.umd.js",
   "module": "dist/react-calendify.es.js",
-  "types": "dist/main.d.ts",
+  "types": "dist/types/main.d.ts",
   "exports": {
     ".": {
       "import": "dist/react-calendify.es.js",
