@@ -3,14 +3,18 @@ on:
     branches: [main]
 
 jobs:
-  publish:
+  publish-module:
+    name: "Publish Module to NPM"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: 16.14.0
-      - run: npm install
-      - uses: JS-DevTools/npm-publish@v1
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+      - run: npm run build
+      - run: npx semantic-release@17
         with:
           token: ${{ secrets.NPM_TOKEN }}
