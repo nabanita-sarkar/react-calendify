@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "description": "React calendar to show events",
   "license": "MIT",
-  "repository": "nabanita-sarkar/react-calendify",
+  "repository": "git@github.com:nabanita-sarkar/react-calendify.git",
   "author": "Nabanita Sarkar",
   "publishConfig": {
     "name": "react-calendify",
