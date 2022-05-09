@@ -1,6 +1,6 @@
 {
   "name": "react-calendify",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React calendar to show events",
   "license": "MIT",
   "repository": {
@@ -21,7 +21,8 @@
     ".": {
       "import": "dist/react-calendify.es.js",
       "require": "dist/react-calendify.umd.js"
-    }
+    },
+    "./dist/style.css": "dist/style.css"
   },
   "keywords": [
     "react",
