@@ -1,6 +1,6 @@
 {
-  "name": "@nabanita-sarkar/react-events-calendar",
-  "version": "0.1.0",
+  "name": "react-calendify",
+  "version": "0.1.1",
   "description": "React calendar to show events",
   "license": "MIT",
   "repository": {
@@ -11,10 +11,17 @@
     "name": "Nabanita Sarkar"
   },
   "publishConfig": {
-    "name": "@nabanita-sarkar/react-events-calendar",
-    "registry": "https://npm.pkg.github.com/nabanita-sarkar"
+    "name": "react-calendify",
+    "registry": "https://registry.npmjs.org/"
   },
-  "main": "src/main.tsx",
+  "main": "dist/react-calendify.umd.js",
+  "module": "dist/react-calendify.es.js",
+  "exports": {
+    ".": {
+      "import": "dist/react-calendify.es.js",
+      "require": "dist/react-calendify.umd.js"
+    }
+  },
   "keywords": [
     "react",
     "calendar",
