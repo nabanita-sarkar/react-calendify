@@ -19,6 +19,7 @@
     },
     "./dist/style.css": "dist/style.css"
   },
+  "sideEffects": false,
   "release": {
     "branches": [
       "main"
