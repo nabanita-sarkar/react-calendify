@@ -2,6 +2,8 @@
 
 _An Events Calendar library for React_
 
+![npm publish](https://github.com/nabanita-sarkar/react-calendify/actions/workflows/npm-publish.yml/badge.svg) [![semantic-release: react](https://img.shields.io/badge/semantic--release-react-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+
 **⚠ CAUTION** - API may change drastically
 
 The aim of this project to create highly customizable events based calendar for react. Although many feature-rich libraries like react-big-calendar, react-full-calendar, dayz exist, the lack of customizability can be a hindrance sometime.
