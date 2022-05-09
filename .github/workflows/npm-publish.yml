@@ -16,5 +16,5 @@ jobs:
         uses: bahmutov/npm-install@v1
       - run: npm run build
       - run: npx semantic-release@17
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
