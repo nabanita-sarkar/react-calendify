@@ -22,6 +22,7 @@
       "require": "dist/react-calendify.umd.js"
     }
   },
+  "types": "./dist/types/index.d.ts",
   "keywords": [
     "react",
     "calendar",
@@ -30,7 +31,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@types/node": "^17.0.31",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
