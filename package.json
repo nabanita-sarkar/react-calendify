@@ -9,13 +9,13 @@
     "name": "react-calendify",
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "dist/react-calendify.umd.js",
+  "main": "dist/react-calendify.cjs.js",
   "module": "dist/react-calendify.es.js",
   "types": "dist/types/main.d.ts",
   "exports": {
     ".": {
       "import": "dist/react-calendify.es.js",
-      "require": "dist/react-calendify.umd.js"
+      "require": "dist/react-calendify.cjs.js"
     },
     "./dist/style.css": "dist/style.css"
   },
@@ -36,19 +36,25 @@
     "build": "vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "dayjs": "^1.11.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "devDependencies": {
     "@types/node": "^17.0.31",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "dayjs": "^1.11.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup-plugin-node-externals": "^4.0.0",
     "sass": "^1.51.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
     "vite-plugin-checker": "^0.3.4"
-  }
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
